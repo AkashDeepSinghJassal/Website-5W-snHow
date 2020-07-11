@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500i" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $("#section").load("header.html");
+      $("#foot").load("footer.html");
+    });
+  </script>
+  <style>
+    body {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+    }
+
+    .col-sm-9 {
+      border-left: 1px solid grey;
+      padding: 50px 150px 50px 50px;
+    }
+
+    .col-sm-9 p,.col-sm-9 li {
+      font-size: 20px;
+    }
+
+    .col-sm-9 h3 {
+      font-size: 30px;
+    }
+
+    .col-sm-9 h1 {
+      font-size: 40px;
+      border-bottom: 2px solid#00d301;
+    }
+
+    .col-sm-3 {
+      margin-top: 50px;
+    }
+
+    ul.nav-pills {
+      position: fixed;
+      width: 20%;
+
+    }
+
+    .nav-pills li a,
+    .nav-pills {
+      color: #fff !important;
+
+      background-color: #3f3f3f;
+    }
+
+    .nav-pills li a:hover,
+    .nav-pills li.active a {
+      color: #00d301 !important;
+      background-color: black !important;
+    }
+    [class*=col-sm-9] img{
+      width:600px;
+      float:left;
+      padding:0 15px 15px 0;
+    }
+
+    @media screen and (max-width: 810px) {
+
+      #section1,
+      #section2,
+      #section3,
+      #section5,
+      #section4 {
+        margin-left: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="55">
+  <div id="section"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-3" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#section1">What is VFX?</a></li>
+          <li><a href="#section2">How do vfx appear so real?</a></li>
+          <li><a href="#section3">Is there a software for VFX?</a></li>
+          <li><a href="#section4">What is Difference between SFX and VFX?</a></li>
+          <li><a href="#section5">Amazing Career Opportunities in the VFX Industry</a></li>
+
+        </ul>
+      </nav>
+      <div class="col-sm-9">
+        <div id="section1">
+          <h1>
+            What is VFX?
+          </h1>
+          <img src="../res/img/vfx-1.jpg">
+          <p>
+            In filmmaking, visual effects (abbreviated VFX) are the processes by which imagery is created and/or
+            manipulated outside the context of a live action shot. Visual effects involve the integration of live-action
+            footage and generated imagery to create environments which look realistic, but would be dangerous,
+            expensive, impractical, or simply impossible to capture on film. Visual effects using computer generated
+            imagery have recently become accessible to the independent filmmaker with the introduction of affordable and
+            easy-to-use animation and compositing software.
+          </p>
+         
+        </div>
+        <div id="section2">
+          <h1>
+            How do vfx appear so real?
+          </h1>
+          <img src="../res/img/vfx-2.jpg">
+          <p>
+            <ul>
+              <li>Accurate recovery of the camera track - an under estimated item, this is recovering the frame to frame
+                position of the live action camera, so the 3D rendering camera can be placed at the same location in
+                3-space. If the live action camera was moving, and the 3D camera track is accurate, whatever is rendered
+                through the 3D camera is projected to appear in sync with the live action.</li>
+              <li>
+                Realistic rendering - skins, fabric, hair, liquids, semi-transparencies, reflections, dirt…
+              </li>
+              <li>
+                Realistic motion, physics driven primary and secondary motions and so on…
+              </li>
+              <li>
+                Integrated lighting and atmosphere, meaning frame by frame attention by Colorists and Compositors
+              </li>
+              <li>
+                Accurate recreation of film grain, motion blur and lens distortion.
+              </li>
+
+            </ul>
+          </p>
+
+        </div>
+        <div id="section3">
+          <h1>
+            Is there a software for VFX?
+          </h1>
+          <img src="../res/img/vfx-3.jpg">
+          <h3>
+
+          </h3>
+          <p>
+            From creating some cool matte paintings in Photoshop and then adding some camera animation using After
+            Effects or Nuke or any other compositing softwares to high end dynamics simulations like fluid effects,
+            destruction, explosions and various other particle dynamics using the softwares like Houdini, Real Flow etc
+            etc..
+
+            o overall, some of the industry standard softwares for used for visual effects productions are..
+
+            Maya, 3ds Max, c4d, blender, zbrush, 3d coat, modo, mari, marvelous designer silo etc for 3d modelling,
+            sculpting, texturing, rendering, animation along with Vray, Arnold, Maxwell etc for Lighting and final
+            rendering..
+
+            Mocha, 3d equalizer, PFTrack, Boujou, Syntheyes, SilhouetteFX for camera tracking, match moving, object
+            removing, clean plating, rotoscopy etc etc..
+
+            Houdini, Real Flow, FumeX, Krakatoa, along with Maya’s own Dynamics and many other Particle and Dynamics
+            software and 3rd party plugins for Dynamics and Particle Simulation
+
+            Vue, World Machine, City Engine for world and terrain creation..
+
+            and lastly for compositing Nuke, Fusion, Composite, After Effects etc etc..
+          </p>
+
+        
+
+        </div>
+        <div id="section4">
+
+          <h1>
+            What is Difference between SFX and VFX?
+          </h1>
+
+          <p>
+            SFX – Special Effects
+            VFX – Visual Effects
+
+            SFX are done ‘in camera,’ that is to say they actually, physically happen. If you drop a match in a can of
+            petrol and record the resultant explosion, that’s SFX. If you build a prosthetic arm, then attach it to your
+            actor then have it ripped off and blood spurt out, that’s SFX. So are gunshot wounds, firing blanks,
+            stabbing people etc.
+
+            VFX are done in post-production, through the power of a computer. If you create a computer model of a
+            spaceship and fly it across the background of your scene, that’s VFX. If you greenscreen an actor to make it
+            look like he’s falling from a plane, that’s VFX. Now, these days, VFX is often cheaper than SFX so often
+            explosions, spurting blood and muzzle-flashes are done as VFX.
+          </p>
+        
+        </div>
+
+        <div id="section5">
+
+          <h1>
+            Amazing Career Opportunities in the VFX Industry
+          </h1>
+          <img src="../res/img/vfx-4.jpg">
+
+
+          <h3>
+            1. Layout Artist
+          </h3>
+
+          <p>
+            Usually part of the pre-production and previsualization process, a layout artist, as the name suggests, lays
+            the foundations for how the visuals will eventually look. Typically, a layout artist is tasked with
+            interpreting the script and storyboard and creating templates for how to transfer the script or storyboard
+            into the visual medium. Everything from scene creation to camera angles and more falls under this remit.
+          </p>
+
+          <h3>
+            2. Compositing Artist
+          </h3>
+
+          <p>
+            Well done visual effects merge seamlessly with the rest of the background, and don’t distract the viewing
+            experience at all. One glitch though, and it can ruin the entire experience for the viewer. A compositor’s
+            job is to ensure that this seamlessness between VFX and live action is intact, and any visual disturbances
+            are eliminated.
+          </p>
+
+          <h3>
+            3. Lighting Artist
+          </h3>
+
+          <p>
+            Lighting is one of the most crucial aspects of any film production – live action or animated. A lighting
+            artist is in charge of understanding the behavior of light and its interaction with real world subjects and
+            translating that into the visual effects world. Lighting plays a very important role in visual continuity
+            and even the storytelling process, and a lighting artist has to be able to deliver the perfect amount of
+            illumination to make a scene pop.
+          </p>
+
+          <h3>
+            4. Rendering Artist
+          </h3>
+
+          <p>
+            When it comes to VFX career opportunities in India, rendering artists are in high demand across major VFX
+            studios and production houses. In a similar vein to lighting artists, rendering artists are responsible for
+            turning the 3D models into the real world-esque visuals we see on the screen. A delicate and highly
+            technical job, rendering artists make sure that the project is transformed from an idea to a visual.
+          </p>
+
+          <h3>
+            5. Roto Artist
+          </h3>
+
+          <p>
+            A rotoscoping artist or roto artist has the difficult and imperative task of tracing all those areas of a
+            frame where CG meets real life, in order to provide compositors with a framework from which to begin their
+            work. A job that offers great foundation in VFX, and often a starting point for VFX professionals, there is
+            a great demand for roto artists today.
+          </p>
+
+          <h3>
+            6. Matte Painter
+          </h3>
+
+          <p>
+            You know those beautiful, almost magical tapestries that only VFX films seem to have? A matte painter has a
+            huge hand in their creation. A matte artist takes visual reference cues such as photographs, sketches and
+            other references and turns them into realistic VFX scenes that all the action will take place in.
+          </p>
+
+          <h3>
+            7. Match Mover Artist
+          </h3>
+
+          <p>
+            A match mover is typically an expert in both 2D and 3D as he or she has to work at the confluence of both
+            worlds. An artist that works in CGI, tracking movements is an important part of the match mover’s
+            responsibilities, as in this role, you would be typically responsible for ensuring that the
+            computer-generated graphics integrate properly with the live-action footage, and proportions, movements and
+            more all have a natural, seamless look and feel.
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="foot"></div>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500i" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $("#section").load("header.html");
+      $("#foot").load("footer.html");
+    });
+  </script>
+  <style>
+    body {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+    }
+
+
+    .col-sm-9 {
+      border-left: 1px solid grey;
+      padding: 50px 150px 50px 50px;
+    }
+
+    .col-sm-9 p {
+      font-size: 20px;
+    }
+
+    .col-sm-9 h3 {
+      font-size: 30px;
+    }
+
+    .col-sm-9 h1 {
+      font-size: 40px;
+      border-bottom: 2px solid#00d301;
+    }
+
+    .col-sm-3 {
+      margin-top: 50px;
+    }
+
+    ul.nav-pills {
+      position: fixed;
+      width: 20%;
+
+    }
+
+    .nav-pills li a,
+    .nav-pills {
+      color: #fff !important;
+
+      background-color: #3f3f3f;
+    }
+
+    .nav-pills li a:hover,
+    .nav-pills li.active a {
+      color: #00d301 !important;
+      background-color: black !important;
+    }
+
+    [class*=col-sm-9] img {
+      width: 600px;
+      float: left;
+      padding: 0 15px 15px 0;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="55">
+  <div id="section"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-3" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#section1">How does a four-stroke engine make power?</a></li>
+          <li><a href="#section2"> What are the main parts of a car engine? </a></li>
+          <li><a href="#section3"> How do we get power from petroleum? </a></li>
+
+          <li><a href="#section4"> How many cylinders does an engine need? </a></li>
+          <!-- <li><a href="#section5"></a></li> -->
+
+        </ul>
+      </nav>
+      <div class="col-sm-9">
+        <div id="section1">
+          <h1>
+            How does a four-stroke engine make power?
+          </h1>
+          <h3>
+            From these images and you'll see that a car engine makes its power by endlessly repeating a series of four
+            steps (called strokes):
+          </h3>
+          <img src="../res/img/car-engine-4.jpg">
+          <p>
+            <strong>Intake</strong>: The piston (green) is pulled down inside the cylinder (gray) by the momentum of the
+            crankshaft (gray wheel at the bottom). Most of the time the car is moving along, so the crankshaft is always
+            turning. The inlet valve (left) opens, letting a mixture of fuel and air (blue cloud) into the cylinder
+            through the purple pipe.
+          </p>
+          <p>
+            <strong>Compression</strong>: The inlet valve closes. The piston moves back up the cylinder and compresses
+            (squeezes) the fuel-air mixture, which makes it much more flammable. When the piston reaches the top of the
+            cylinder, the sparking plug (yellow) fires.
+          </p>
+          <p>
+            <strong>Power</strong>: The spark ignites the fuel-air mixture causing a mini explosion. The fuel burns
+            immediately, giving off hot gas that pushes the piston back down. The energy released by the fuel is now
+            powering the crankshaft.
+          </p>
+          <p>
+            <strong>Exhaust</strong>: The outlet valve (right) opens. As the crankshaft continues to turn, the piston is
+            forced back up the cylinder for a second time. It forces the exhaust gases (produced when the fuel burned)
+            out through the exhaust outlet (blue pipe).
+          </p>
+
+
+          <p>
+
+          </p>
+
+          <div id="section2">
+            <h1>
+              What are the main parts of a car engine?
+            </h1>
+            <img src="../res/img/car-engine-2.jpg">
+            <p>
+              Car engines are built around a set of "cooking pots" called cylinders (usually anything from two to twelve
+              of them, but typically four, six, or eight) inside which the fuel burns. The cylinders are made of
+              super-strong metal and sealed shut, but at one end they open and close like bicycle pumps: they have
+              tight-fitting pistons (plungers) that can slide up and down inside them. At the top of each cylinder,
+              there are two valves (essentially "gates" letting things in or out that can be opened and closed very
+              quickly). The inlet valve allows fuel and air to enter the cylinder from a carburetor or electronic
+              fuel-injector; the outlet valve lets the exhaust gases escape. At the top of the cylinder, there is also a
+              sparking plug (or spark plug), an electrically controlled device that makes a spark to set fire to the
+              fuel.
+              At the bottom of the cylinder, the piston is attached to a constantly turning axle called a crankshaft.
+              The crankshaft powers the car's gearbox which, in turn, drives the wheels
+            </p>
+          </div>
+          <div id="section3">
+            <h1>
+              How do we get power from petroleum?
+            </h1>
+            <img src="../res/img/car-engine-1.jpg">
+            <p>
+
+
+              Cars, trucks, trains, ships, and planes—all these things are powered by fuels made from petroleum. Also
+              known as "crude oil", petroleum is the thick, black, energy-rich liquid buried deep underground that
+              became the world's most important source of energy during the 20th century. After being pumped to the
+              surface, petroleum is shipped or piped to a refinery and separated into gasoline, kerosene, and diesel
+              fuels, and a whole host of other petrochemicals—used to make everything from paints to plastics.
+            </p>
+
+
+            <p>
+              Petroleum fuels are made from hydrocarbons: the molecules inside consist mostly of carbon and hydrogen
+              atoms (with a fewer other elements, such as oxygen, attached for good measure). Wood, paper, and coal also
+              contain hydrocarbons. We can turn hydrocarbons into useful energy simply by burning them. When you burn
+              hydrocarbons in air, their molecules split apart.
+              The carbon and hydrogen combine with oxygen from the air to make carbon dioxide gas and water, while the
+              energy that held the molecules together is released as heat.
+              This process, which is called combustion, releases huge amounts of energy. When you sit round a camp fire,
+              warming yourself near the flames, you're really soaking up energy produced by billions of molecules
+              cracking open and splitting apart!
+            </p>
+
+          </div>
+          <div id="section4">
+
+            <h1>
+              How many cylinders does an engine need?
+
+            </h1>
+            <img src="../res/img/car-engine-3.jpg">
+            <p>
+
+              One problem with the four-stroke design is that the crankshaft is being powered by the cylinder for only
+              one stage out of four. That's why cars typically have at least four cylinders, arranged so they fire out
+              of step with one another.
+              At any moment, one cylinder is always going through each one of the four stages—so there is always one
+              cylinder powering the crankshaft and there's no loss of power. With a 12-cylinder engine, there are at
+              least three cylinders powering the crankshaft at any time—and that's why those engines are used in fast
+              and powerful cars.
+            </p>
+            <h3>
+              How big do the cylinders need to be?
+            </h3>
+
+            <p>
+              It's not just how many cylinders a car has that's important but how much power each one can make as it
+              pushes out its piston. That depends on the size of the cylinder, which, in turn, depends on two key
+              measurements: the diameter of the cylinder (called its bore) and how far the piston moves out (its
+              stroke). The area of a circle is π × radius2, and since the bore is twice the radius, the useful volume of
+              a car cylinder is (π/4) × bore × bore × stroke. In physics terms, the volume of the cylinder is related to
+              how much work the fuel does as it expands, how much energy it transfers to the piston, and (if we consider
+              how often this happens), how much power the car makes. So the bore and stroke are very important—and
+              that's why they're often quoted in technical specifications for car engines along with the number of
+              cylinders. You'll often see these measurements written in the form bore × stroke (so, for example, 90 ×
+              86mm means a bore of 90mm and a stroke of 86mm).
+
+              You'll also see the total volume of a car's cylinders quoted in a measurement called the displacement,
+              which is the volume of a car's cylinders multiplied by how many of them there are. (In other words, it's
+              π/4 × bore × bore × stroke × number of cylinders.) So when you hear a car described as having a "two-liter
+              engine," that usually means it has four cylinders of 0.5 liters or six cylinders of 0.33 liters. The
+              displacement is a rough guide to how much power a car engine can make and you'll usually see it quoted in
+              either liters or cc (cubic centimeters); 1 liter is the same as 1000 cc.
+            </p>
+
+          </div>
+          <!-- <div id="section5">         
+        
+            <h1>
+            </h1>
+            <h3>
+            </h3>
+
+            <p>
+              </p>
+ </div> -->
+        </div>
+      </div>
+    </div>
+    <div id="foot"></div>
+</body>
+
+</html>

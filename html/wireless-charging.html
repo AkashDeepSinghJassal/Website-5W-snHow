@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500i" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $("#section").load("header.html");
+      $("#foot").load("footer.html");
+    });
+  </script>
+  <style>
+    body {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+    }
+
+    .col-sm-9 {
+      border-left: 1px solid grey;
+      padding: 50px 150px 50px 50px;
+    }
+
+    .col-sm-9 p {
+      font-size: 20px;
+    }
+
+    .col-sm-9 h3 {
+      font-size: 30px;
+    }
+
+    .col-sm-9 h1 {
+      font-size: 40px;
+      border-bottom: 2px solid#00d301;
+    }
+
+    .col-sm-3 {
+      margin-top: 50px;
+    }
+
+    ul.nav-pills {
+      position: fixed;
+      width: 20%;
+
+    }
+
+    .nav-pills li a,
+    .nav-pills {
+      color: #fff !important;
+
+      background-color: #3f3f3f;
+    }
+
+    .nav-pills li a:hover,
+    .nav-pills li.active a {
+      color: #00d301 !important;
+      background-color: black !important;
+    }
+    [class*=col-sm-9] img{
+      width:500px;
+      float:left;
+      padding:0 15px 15px 0;
+    }
+
+
+    @media screen and (max-width: 810px) {
+
+      #section1,
+      #section2,
+      #section3,
+      #section5,
+      #section4 {
+        margin-left: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="55">
+  <div id="section"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-3" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#section1">What is Wireless Charging?</a></li>
+          <li><a href="#section2">How does Qi Wireless Charging work?</a></li>
+          <li><a href="#section3">Is Wireless Charging worth it?</a></li>
+
+          <li><a href="#section4"> Is wireless charging harmful?</a></li>
+          <li><a href="#section5">Wireless Power Consortium</a></li>
+
+        </ul>
+      </nav>
+      <div class="col-sm-9">
+        <div id="section1">
+          <h1>
+            What is Wireless Charging?
+          </h1>
+          <img src="../res/img/wireless-charging (2).jpg">
+          <p>
+            Qi Wireless Charging with a wireless energy transfer of up to 5 <a href="#" data-toggle="tooltip"
+              title="Unit of power ">watt</a>
+
+            Qi (the Chinese word for “energy flow“, pronounced like the “chee“ in “cheese“) is the universal standard
+            for wireless charging of battery opererated devices like cell phones, iPods, MP3 players and cameras.
+            The wireless power transfer occurs through electromagnetic induction. With inductive charging the required
+            power reaches the device not through a traditional cable but rather wirelessly through the use of
+            electromagnetic fields. The principle is very simple: the Qi Sender (Charging Station) transfers the
+            required energy to the Qi receiver (the mobile phone).
+
+          </p>
+          <h3>
+            What is the point of wireless charging?
+          </h3>
+
+          <p>
+            The biggest advantage of Qi Wireless Charging technology is that cell phones and chargers from different
+            manufactures are compatible. The only requirement is that both parts – the sender and the receiver – fulfil
+            the Qi specifications.
+            Therefore, every Qi enabled device is compatible with every Qi charging transmitter, regardless of the
+            manufacturer or make of the device. Numerous cell phones, including from market leaders like Nokia, Samsung,
+            Sony, LG, Motorola and HTC,already comply with the Qi standard and can therefore be charged by any Qi
+            Charging Station. The number of enabled devices is constantly growing as Qi wireless charging technology is
+            integrated by an ever-expanding list of manufacturers. This allows you to charge your various battery
+            operated electronic devices with just a single charging station.
+        </div>
+
+        </p>
+        <div id="section2">
+          <h1>How does Qi Wireless Charging work?</h1>
+          <img src="../res/img/wireless-charging (3).jpg">
+          <p>
+            It’s based on the principle of induction
+
+            Wireless Charging isn’t really a completely new product. Electric toothbrushes have been using the
+            principles of inductive charging for many years. Qi Wireless Charging uses a resonant inductive coupling
+            between the sender (the charging station) and the reciever (the mobile device). A regular test signal is
+            sent by the sender to check for a capacity or resonance change, telling the Qi enabled charger base that a
+            qi compatible phone is present. The sender modulates the charge and checks for compatibility to the Qi
+            standard.
+
+            Once Qi compatibility and the energy requirement have been calculated, the charging through induction
+            begins. During the charging the sender and receiver remain in contact and switch into standby mode as soon
+            as the battery is fully charged. Another advantage of the Qi charger base is that it only activates and
+            transfers energy when an enabled device requiring charging is placed upon it.
+
+            With this technology the electromagnetic coils that send and receive the charge are especially shielded to
+            reduce electromagnetic rays.</p>
+        </div>
+        <div id="section3">
+          <h1>
+
+            Is Wireless Charging worth it?
+          </h1>
+          <h3>
+            How convenient would it be to have a single charger for all your phones, iPods, MP3 players, cameras and not
+            even need annoying cables?
+          </h3>
+          <p>
+
+            As endless new smartphones cover the world battery running times have become shorter. Every make, sometimes
+            even every device, has its own special charger. When you get a new device you need a new compatible charger.
+            You quickly find yourself with a confusing pile of different chargers.
+            No more different chargers, no cable spaghetti, no empty batteries are only some of the advantages of
+            wireless charging.
+          </p>
+
+          <h3>
+            Sounds too good to be true?
+          </h3>
+          <p>
+            Not with the Qi Wireless charging solutions from Qinside! Imagine a cable free qi docking station for all Qi
+            compatible phones. Forget all those different chargers and cable spaghetti and have them “share“ a single
+            charger base at home, in the office or on the go.
+
+            Imagine lounges, waiting rooms, airports, train stations, bars and restaurants with Qi enabled charging
+            stations seamlessly integrated into the furniture.
+
+            You can charge your devices at any time, whatever the make, model or manufacturer.
+
+            The only requirement is a Qi compatible device or the use of the Qi Receiver Qi2001 for iPhone 4 - iPhone 6
+            plus and all phones with Micro-USB connections.
+
+            Quickly and simply charge your devices with a wireless power transfer of up to 5 watt.
+
+            Empty batteries in cell phones, iPods, MP3 players and cameras will be a thing of the past!
+          </p>
+
+        </div>
+        <div id="section4">
+
+          <h1>
+            Is wireless charging harmful?
+          </h1>
+          <img src="../res/img/wireless-charging (1).jpg">
+          <p>
+            Expert opinions are divided. On one side, many scientists confirm that the small amount of electromagnetic
+            radiation that is emitted by Wireless Charging is harmless. Others speak of a very harmful radiation that
+            can have a negative impact on the human body.
+          </p>
+          <h3>
+
+            How much electromagnetic radiation is emitted by the Qi Wireless Charging System?
+          </h3>
+
+          <p>
+            Insignificantly little.
+
+            The principle of Qi has been used in electronic toothbrushes for years without any known physical effects on
+            human health. Due to the low range of the Qi wireless charging technology, the electromagnetic radiation is
+            severely limited.
+
+            Electromagnetic radiation exists only in the immediate area of the Qi wireless charging station and only
+            when a device is placed there. The release of electromagnetic rays is further reduced by additional
+            shielding in the sending and receiving coils of the Qi standard.
+
+          </p>
+        </div>
+        <div id="section5">
+
+          <h1>
+            Wireless Power Consortium
+          </h1>
+          <h3>
+            The aim of introducing an international standard for Wireless Charging
+          </h3>
+
+          <p>
+            The Wireless Power Consortium (WPC) was established on the 17th December 2008 and in the same year adopted
+            Qi as the single standard for inductive charging. The introduction of Qi as the global standard enables
+            universal inductive charging for all Qi compatible electronic devices.
+
+            That means that every Qi compatible device can be charged on every Qi compatible charging station. The
+            Wireless Power Consortium, with 250 members including market leaders Samsung, Nokia, LG, Panasonic, HTC,
+            Sony, Microsoft, Ikea and Motorola, is the biggest union of manufacturers for cable free, inductive
+            charging.
+
+            “Due to the increase of Qi products, it is important to ensure that all wireless chargers work correctly
+            with all mobile devices” says WPC Chairman Menno Treffers “the continually updated database created by
+            Testronic makes it easy to determine whether a new product will be compatible with previously certified
+            products.”
+
+            “In our view the introduction of the Qi Standard is one of the most important technical developments for
+            users of mobile devices such as phones, tablets and other devices that are now used everyday in our work and
+            private lives“ says Johan Craeyback, Chief Technology Officer at Testronic Labs.
+
+            Further information can be found at Wireless Power Consortium.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="foot"></div>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $("#section").load("header.html");
+            $("#foot").load("footer.html");
+        });
+    </script>
+    <style>
+        body {
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
+
+
+        .col-sm-9 {
+            border-left: 1px solid grey;
+            padding: 50px 150px 50px 50px;
+        }
+
+        .col-sm-9 p {
+            font-size: 20px;
+        }
+
+        .col-sm-9 h3 {
+            font-size: 30px;
+        }
+
+        .col-sm-9 h1 {
+            font-size: 40px;
+            border-bottom: 2px solid#00d301;
+        }
+
+        .col-sm-3 {
+            margin-top: 50px;
+        }
+
+        ul.nav-pills {
+            position: fixed;
+            width: 20%;
+
+        }
+
+        .nav-pills li a,
+        .nav-pills {
+            color: #fff !important;
+
+            background-color: #3f3f3f;
+        }
+
+        .nav-pills li a:hover,
+        .nav-pills li.active a {
+            color: #00d301 !important;
+            background-color: black !important;
+        }
+
+        [class*=col-sm-9] img {
+            width: 600px;
+            float: left;
+            padding: 0 15px 15px 0;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="55">
+    <div id="section"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3" id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#section1"> Where Is NASA?</a></li>
+                    <li><a href="#section2">   What Does NASA Do?  </a></li>
+                    <li><a href="#section3">  How did NASA created?</a></li>
+
+                    <li><a href="#section4">  What are programs of NASA?</a></li>
+                    <!-- <li><a href="#section5"></a></li> -->
+
+                </ul>
+            </nav>
+            <div class="col-sm-9">
+                <div id="section1">
+                    <h1>
+
+                        Where Is NASA?
+                    </h1>
+
+                    <img src="../res/img/nasa.jpg">
+                    <p>
+                        NASA Headquarters is in Washington, D.C. There are 10 NASA centers across the United States.
+                        There are also seven smaller NASA work places where they test and study Earth and space.
+                        Thousands of people work for NASA! Being an astronaut is probably the best-known job at NASA,
+                        but astronauts make up just a small part of the workforce. A lot of engineers and scientists
+                        work at NASA. People are doing other jobs, too, like secretaries, writers, lawyers and even
+                        teachers.</p>
+
+
+                    <p>
+
+                    </p>
+<br><br>
+                    <div id="section2">
+                        <h1>
+                            What Does NASA Do? </h1>
+                        <img src="../res/img/nasa-2.gif">
+                        <p>
+                            NASA does a lot of different things. NASA makes satellites. The satellites help scientists
+                            learn more about Earth. NASA sends probes into space. NASA scientists study things in the
+                            solar system and even farther away. A new program will send humans to explore the Moon and,
+                            one day, Mars. NASA also shares what they learn with others. People who do not work at NASA
+                            can use NASA ideas to make new inventions. These new inventions can help make life on Earth
+                            better.
+
+                            Do you like science, math and learning new things? Would you like to be an adventurer? Would
+                            you like to plan future missions to other planets and outer space? People at NASA work hard
+                            to share news about NASA's missions with teachers. Then, teachers can use NASA lessons to
+                            teach their students about science, technology, engineering and math. </p>
+                    </div>
+                    <br><br>
+                    <div id="section3">
+                        <h1>
+                            How did NASA created?
+                        </h1>
+                        <img src="../res/img/nasa-1.gif">
+                        <p>
+
+                            From 1946, the National Advisory Committee for Aeronautics (NACA) had been experimenting
+                            with rocket planes such as the supersonic Bell X-1.[14] In the early 1950s, there was
+                            challenge to launch an artificial satellite for the International Geophysical Year
+                            (1957–58). An effort for this was the American Project Vanguard. After the Soviet launch of
+                            the world's first artificial satellite (Sputnik 1) on October 4, 1957, the attention of the
+                            United States turned toward its own fledgling space efforts. The US Congress, alarmed by the
+                            perceived threat to national security and technological leadership (known as the "Sputnik
+                            crisis"), urged immediate and swift action; President Dwight D. Eisenhower and his advisers
+                            counseled more deliberate measures. On January 12, 1958, NACA organized a "Special Committee
+                            on Space Technology", headed by Guyford Stever.[9] On January 14, 1958, NACA Director Hugh
+                            Dryden published "A National Research Program for Space Technology" stating:[15]
+                            File:NASA 60th- How It All Began.webmPlay media
+                            A short documentary about the beginnings of NASA
+
+                            It is of great urgency and importance to our country both from consideration of our prestige
+                            as a nation as well as military necessity that this challenge [Sputnik] be met by an
+                            energetic program of research and development for the conquest of space ... It is
+                            accordingly proposed that the scientific research be the responsibility of a national
+                            civilian agency ... NACA is capable, by rapid extension and expansion of its effort, of
+                            providing leadership in space technology.[15]
+                        </p>
+
+
+
+
+                    </div>
+                    <div id="section4">
+
+                        <h1>
+                            What are programs of NASA?
+                        </h1>
+                        
+                        <h3>
+                            Apollo Program
+                        </h3>
+                        <img src="../res/img/nasa-img-1.jpg">
+                        <p>
+
+                            The U.S public's perception of the Soviet lead in the space race (by putting the first man
+                            into space) motivated President John F. Kennedy to ask the Congress on May 25, 1961, to
+                            commit the federal government to a program to land a man on the Moon by the end of the
+                            1960s, which effectively launched the Apollo program.[44]
+
+                            Apollo was one of the most expensive American scientific programs ever. It cost more than
+                            $20 billion in 1960s dollars[45] or an estimated $218 billion in present-day US dollars.[46]
+                            (In comparison, the Manhattan Project cost roughly $27.8 billion, accounting for
+                            inflation.)[46][47] It used the Saturn rockets as launch vehicles, which were far bigger
+                            than the rockets built for previous projects.[48] The spacecraft was also bigger; it had two
+                            main parts, the combined command and service module (CSM) and the Apollo Lunar Module (LM).
+                            The LM was to be left on the Moon and only the command module (CM) containing the three
+                            astronauts would eventually return to Earth.
+                        </p>
+                        <h3>
+                            Skylab </h3>
+                            <img src="../res/img/nasa-skylab.jpg">
+
+                        <p>
+                            Skylab was the United States' first and only independently built space station.[57]
+                            Conceived in 1965 as a workshop to be constructed in space from a spent Saturn IB upper
+                            stage, the 169,950 lb (77,088 kg) station was constructed on Earth and launched on May 14,
+                            1973, atop the first two stages of a Saturn V, into a 235-nautical-mile (435 km) orbit
+                            inclined at 50° to the equator. Damaged during launch by the loss of its thermal protection
+                            and one electricity-generating solar panel, it was repaired to functionality by its first
+                            crew. It was occupied for a total of 171 days by 3 successive crews in 1973 and 1974.[57] It
+                            included a laboratory for studying the effects of microgravity, and a solar observatory.[57]
+                            NASA planned to have a Space Shuttle dock with it, and elevate Skylab to a higher safe
+                            altitude, but the Shuttle was not ready for flight before Skylab's re-entry on July 11,
+                            1979.[58]
+
+
+                        </p>
+                        <h3>
+                            Space Shuttle program
+                        </h3>
+                        <img src="../res/img/nasa-space.jpg">
+                        <p>
+                            The Space Shuttle became the major focus of NASA in the late 1970s and the 1980s. Planned as a frequently launchable and mostly reusable vehicle, four Space Shuttle orbiters were built by 1985. The first to launch, Columbia, did so on April 12, 1981,[62] the 20th anniversary of the first known human space flight.[63]
+
+Its major components were a spaceplane orbiter with an external fuel tank and two solid-fuel launch rockets at its side. The external tank, which was bigger than the spacecraft itself, was the only major component that was not reused. The shuttle could orbit in altitudes of 185–643 km (115–400 miles)[64] and carry a maximum payload (to low orbit) of 24,400 kg (54,000 lb).[65] Missions could last from 5 to 17 days and crews could be from 2 to 8 astronauts.[64]
+
+On 20 missions (1983–98) the Space Shuttle carried Spacelab, designed in cooperation with the European Space Agency (ESA). Spacelab was not designed for independent orbital flight, but remained in the Shuttle's cargo bay as the astronauts entered and left it through an airlock.[66] On June 18, 1983 Sally Ride became the first American woman in space, onboard the Space Shuttle Challenger STS-7 mission. [67] Another famous series of missions were the launch and later successful repair of the Hubble Space Telescope in 1990 and 1993, respectively.
+                        </p>
+                    </div>
+                    <!-- <div id="section5">         
+        
+            <h1>
+            </h1>
+            <h3>
+            </h3>
+
+            <p>
+              </p>
+ </div> -->
+                </div>
+            </div>
+        </div>
+        <div id="foot"></div>
+</body>
+
+</html>

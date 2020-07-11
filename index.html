@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<!-- #00d301,#36c275 50%,#00a562 /=#35c793;   linear-gradient(#ffe0e7, #ecfafc)-->
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500i" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <nav class=" navbar navbar-inverse navbar-fixed-top ">
+    <div class="container-fluid">
+      <div class="navbar-header header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand ">5W's & How</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link" href="">5W s & How</a></li>
+              <li><a class="nav-link" href="">Portfolio</a></li>
+              <li><a class="nav-link" href="">Why Us</a></li>
+              <li><a class="nav-link" href="">User Feedback</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">LINKS</a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link" href="">What</a></li>
+              <li><a class="nav-link" href="">Why</a></li>
+              <li><a class="nav-link" href="">Where</a></li>
+              <li><a class="nav-link" href="">Who</a></li>
+              <li><a class="nav-link" href="">When </a></li>
+              <li><a class="nav-link" href="">How </a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#footer-foot" class="dropdown-toggle" data-toggle="dropdown"><i
+                class="fa fa-phone"></i>&nbsp;&nbsp;CONTACT US</a>
+          </li>
+          <li class="dropdown"><a href="" class="dropdown-toggle openBtn" data-toggle="dropdown"><i
+                class="fa fa-search"></i>&nbsp;&nbsp;SEARCH</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="myOverlay" class="overlayy">
+    <span class="closeBtn">x</span>
+    <div class="overlay-content">
+      <form action="/action_page.php">
+        <input id="myInput" type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </form>
+      <ul id="myList">
+        <a href="html/wireless-charging.html">
+            <li>What is Wireless Charging?</li>
+        </a>
+        <a href="html/wireless-charging.html">
+            <li>Is wireless charging harmful</li>
+        </a>
+        <a href="html/vfx.html">
+            <li>What is VFX?</li>
+        </a>
+        <a href="html/vfx.html">
+            <li>How do vfx appear so real?</li>
+        </a>
+         <a href="html/vfx.html">
+            <li>What is Difference between SFX and VFX?</li>
+        </a> 
+        <a href="html/car-engine.html">
+            <li>What are the main parts of a car engine?</li>
+        </a> 
+        <a href="html/car-engine.html">
+          <li>How do we  get power from petroleum?</li>
+      </a><a href="html/car-engine.html">
+        <li>What are components of Car engine</li>
+    </a>
+    <a href="html/nasa.html">
+      <li>  What Does NASA Do? </li>
+  </a><a href="html/nasa.html">
+    <li> Where Is NASA?</li>
+</a>
+    </ul>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+
+      $("#myList").css("display", "none");
+
+      $("#myInput").on("keyup", function () {
+        // alert("wewewe");
+
+        var value = $(this).val().toLowerCase();
+        if (value == '') {
+          $("#myList").css("display", "none");
+        } else {
+          $("#myList").css("display", "block");
+          $("#myList li").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        }
+      });
+      $(".openBtn").click(function () {
+        $("#myOverlay").css("display", "block");
+        // alert("aaaa");
+      });
+      $(".closeBtn").click(function () {
+        $("#myOverlay").css("display", "none");
+      });
+    });
+  </script>
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="res/img/cover-4.jpg" height="700" width="1200" class="img-responsive slide-img" alt="Image">
+        <div class="carousel-caption">
+          <h1>Welcome Web Geeks</h1>
+          <h3>To Educational Daily Stuff</h3>
+          <a class="btn btn-primary btn-lg nav-bu">Get Started</a>
+          <a class="btn btn-primary btn-lg nav-bu openBtn">Search</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="res/img/cover-2.jpg" height="700" width="1200" class="img-responsive slide-img" alt="Image">
+        <div class="carousel-caption">
+          <h1>"Why" </h1>
+          <h3>Get all your questions solved</h3>
+        </div>
+      </div>
+      <div class="item">
+        <img src="res/img/cover-3.jpg" height="700" width="1200" class="img-responsive slide-img" alt="Image">
+        <div class="carousel-caption">
+          <h1>"How" </h1>
+          <h3>Get all your questions solved</h3>
+        </div>
+      </div>
+      <div class="item">
+        <img src="res/img/cover-1.jpg" height="700" width="1200" class="img-responsive slide-img" alt="Image">
+        <div class="carousel-caption">
+          <h1>"Where" </h1>
+          <h3>Get all your questions solved</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div style="background-image:linear-gradient(#cfc5bb,white, #cdf3cf)">
+    <div class="container"
+      style="height:700px;font-size:32px;text-align: center;">
+  
+      <div class="row">
+          <h1 style="  background: -webkit-linear-gradient(#00fa00, #03b453 50%, #028b54);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 100px;
+          text-shadow:2px 2px 8px #073607;
+          ">ABOUT US</h1>
+        <div class="card  col-12 col-md-6 col-lg-4">
+          <div >
+            <span class="fa fa-smile-o" style="color: rgb(0, 0, 0); font-size: 160px" media-simple="true"></span>
+          </div>
+          <div class="card-box">
+            <h4 >
+              Creativity</h4>
+            <p >
+              It's the ability to think outside the box. We make decisions, create something new and generate a lot of
+              ideas.
+            </p>
+          </div>
+        </div>
+  
+        <div class="card  col-12 col-md-6 col-lg-4">
+          <div >
+            <span class="fa fa-user-circle-o" style="color: rgb(0, 0, 0);font-size: 160px;" media-simple="true"></span>
+          </div>
+          <div class="card-box">
+            <h4 >
+              Worldwide</h4>
+            <p >
+              Every content has been thoroughly searched and then gather to provide deep escense of knowledege to user.
+            </p>
+          </div>
+        </div>
+  
+        <div class="card col-12 col-md-6 col-lg-4">
+          <div class="card-img pb-3">
+            <span class="fa fa-globe" style="color: rgb(0, 0, 0);font-size:160px;" media-simple="true"></span>
+          </div>
+          <div class="card-box">
+            <h4>
+              Unique Styles
+            </h4>
+            <p >
+              We offers many site blocks in several themes, and though these blocks are pre-made, they are flexible.
+            </p>
+          </div>
+        </div>
+  </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope, $interval) {
+      $scope.theTime = new Date().toLocaleTimeString();
+      $interval(function () {
+        $scope.theTime = new Date().toLocaleTimeString();
+      }, 1000);
+    });
+  </script>
+  <div class="parallax">
+    <div class="parallax-content" ng-app="myApp" ng-controller="myCtrl">
+      <h1>{{theTime}}</h1>
+      <p>
+        <span class=" fa fa-quote-left"></span>
+        Scroll Down to Immerse in Knowledge of Ocean...
+        <span class="fa fa-quote-right"></span>
+      </p>
+    </div>
+  </div>
+  <!-- <hr class="line-gap"> -->
+  <!-- Content Start here -->
+  <div class="container-fluid">
+    <!-- Content division strat here -->
+    <div class="row ">
+      <!-- Main body start here -->
+      <div class="main-body">
+        <!-- Assets Start Here -->
+        <div class="assets ">
+          <span class="heading-underline">_____</span>
+          <h1 class="main-heading">WHY</h1>
+          <br>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/wireless-charging (1).jpg">
+              <div class="overlay">
+                <h3 class="card-box-text">wireless charging</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/wireless-charging.html" class="card-box-link">
+                  What is wireless Charging?<br>
+                  How Wireless Charging Works<br>
+                  ...<small>click here!</small>
+                </a>
+                </h3>
+
+            </div>
+
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/vfx-3.jpg">
+              <div class="overlay">
+                <h3 class="card-box-text">VFX</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/vfx.html" class="card-box-link">
+                  What is VFX?<br>
+                  Why is VFX so real?<br>
+                  ...<small>click here!</small>
+                </a>
+              </h4>
+
+            </div>
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/commingSrc.PNG">
+              <div class="overlay">
+                <h3 class="card-box-text">Soon</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/comming-soon.html" class="card-box-link">
+                  Unlock in..<br>
+                  ..
+                </a>
+              </h4>
+
+            </div>
+          </div>
+
+
+        </div>
+        <hr class="light">
+        <!-- Assets end here -->
+        <!-- Assets Start Here -->
+        <div class="assets">
+          <span class="heading-underline">_____</span>
+          <h1 class="main-heading">HOW</h1>
+          <br>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/car-engine-1.jpg">
+              <div class="overlay">
+                <h3 class="card-box-text">Car-Engine</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/car-engine.html" class="card-box-link">
+                  How a car engine works?<br>
+                  Main parts of a car engine?<br>
+                  ...<small>click here!</small>
+                </a>
+               
+              </h4>
+
+            </div>
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/tie.jpg">
+              <div class="overlay">
+                <h3 class="card-box-text">TIE</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/vfx.html" class="card-box-link">
+                  How to tie a TIE?<br>
+                  Itie procedure<br>
+                  ...<small>click here!</small>
+                </a>
+              </h4>
+
+            </div>
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/turban.jpg" >
+              <div class="overlay">
+                <h3 class="card-box-text">TURBAN</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/vfx.html" class="card-box-link">
+                  How to wear a TURBAN?<br>
+                  Turban knowledge<br>
+                  ...<small>click here!</small>
+                </a>
+              </h4>
+
+            </div>
+        </div>
+        </div>
+        <hr class="light">
+        <!-- Assets end here -->
+        <!-- Assets Start Here -->
+        <div class="assets">
+          <span class="heading-underline">_____</span>
+          <h1 class="main-heading">WHERE</h1>
+          <br>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/nasa.jpg">
+              <div class="overlay">
+                <h3 class="card-box-text">NASA</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/nasa.html" class="card-box-link">
+                  Where is NASA Headquaters<br>
+                  NASA Projects<br>
+                  ...<small>click here!</small>
+                </a>
+              </h4>
+
+            </div>
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/bermuda-triangle.jpg">
+              <div class="overlay">
+                <h3 class="card-box-text">BERMUDA TRIANGLE</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/vfx.html" class="card-box-link">
+                  WHere is bermuda triangle?<br>
+                  Mystery about bermuda?<br>
+                  ...<small>click here!</small>
+                </a>
+              </h4>
+
+            </div>
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/commingSrc.PNG">
+              <div class="overlay">
+                <h3 class="card-box-text">Soon</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/comming-soon.html" class="card-box-link">
+                  Unlock in..<br>
+                  ..
+                </a>
+              </h4>
+
+            </div>
+          </div>
+         
+         
+        </div>
+        <hr class="light">
+        <!-- Assets end here -->
+        <!-- Assets Start Here -->
+        <div class="assets">
+          <span class="heading-underline">_____</span>
+          <h1 class="main-heading">WHEN</h1>
+          <br>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/world-war.jpg">
+              <div class="overlay">
+                <h3 class="card-box-text">WORLD-WAR</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/vfx.html" class="card-box-link">
+                  When did world war happend?<br>
+                  Detail World War I/II<br>
+                  ...<small>click here!</small>
+                </a>
+              </h4>
+
+            </div>
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/commingSrc.PNG">
+              <div class="overlay">
+                <h3 class="card-box-text">Soon</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/comming-soon.html" class="card-box-link">
+                  Unlock in..<br>
+                  ..
+                </a>
+              </h4>
+
+            </div>
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/lunar.jpeg">
+              <div class="overlay">
+                <h3 class="card-box-text">LUNAR </h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/vfx.html" class="card-box-link">
+                  When did lunar ecllipse Occur?<br>
+                  Facts<br>
+                  ...<small>click here!</small>
+                </a>
+              </h4>
+
+            </div>
+          </div>
+         
+        </div>
+        <hr class="light">
+        <!-- Assets end here -->
+        <!-- Assets Start Here -->
+        <div class="assets">
+          <span class="heading-underline">_____</span>
+          <h1 class="main-heading">WHO</h1>
+          <br>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/modi.jpg">
+              <div class="overlay">
+                <h3 class="card-box-text">PM MODI</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/vfx.html" class="card-box-link">
+                  Who is Narendra Modi<br>
+                  prime Minister of india<br>
+                  ...<small>click here!</small>
+                </a>
+              </h4>
+
+            </div>
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/commingSrc.PNG">
+              <div class="overlay">
+                <h3 class="card-box-text">Soon</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/comming-soon.html" class="card-box-link">
+                  Unlock in..<br>
+                  ..
+                </a>
+              </h4>
+
+            </div>
+          </div>
+          <div class="card-box col-sm-3">
+            <div class="card-box-img-div">
+              <img class="card-box-img img-responsive" src="res/img/richest.jpg">
+              <div class="overlay">
+                <h3 class="card-box-text">RICHEST</h3>
+              </div>
+            </div>
+            <div class="card-box-body">
+              <h4>
+                <a href="html/vfx.html" class="card-box-link">
+                 Who are the most richest men of wold<br>
+                 Know about them<br>
+                  ...<small>click here!</small>
+                </a>
+              </h4>
+
+            </div>
+          </div>
+         
+        </div>
+        <!-- Assets end here -->
+      </div>
+      <!-- Main body End here -->
+      <!-- Side Body Start here -->
+     
+
+
+    </div>
+    <!-- content division end here -->
+  </div>
+
+  <!-- Content end here -->
+  <footer id="footer-foot">
+    <div class="text-center">
+      <span class="heading-underline">_______________</span>
+      <h1 id="footer-head">CONTACT US</h1>
+
+    </div>
+    <div class="col-sm-4 text-center">
+      <hr class="light">
+      <h1>
+        QUICK LINKS
+      </h1>
+      <hr class="light">
+      <a href="#a#">WHAT</a><br>
+      <a href="#a#">WHY</a><br>
+      <a href="#a#">WHEN</a><br>
+      <a href="#a#">WHERE</a><br>
+      <a href="#a#">WHO</a><br>
+      <a href="#a#">HOW</a><br>
+    </div>
+    <div class="col-sm-4 text-center">
+      <hr class="light">
+      <h1>ADDRESS </h1>
+      <hr class="light">
+      <p>Zirakpur,Punjab</p>
+      <p>Baltana</p>
+      <p>140603</p>
+      <p>Education Hub</p>
+    </div>
+    <div class="col-sm-4 text-center">
+      <hr class="light">
+      <h1>CONTACT</h1>
+      <hr class="light">
+      <p>aaa@5Ws&How.co.in</p>
+      <p>1234567890</p>
+      <p>10:00 - 20:00</p>
+      <p>Sunday Closed</p>
+    </div>
+    <hr class="light">
+    <div class="social">
+      <h1>SOCIAL INTERACTION</h1>
+      <a href=""><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-twitter"></i> </a>
+      <a href=""><i class="fa fa-google-plus"></i> </a>
+      <a href=""><i class="fa fa-instagram"></i> </a>
+      <a href=""><i class="fa fa-youtube"></i> </a>
+    </div>
+    <hr class="light">
+    <p class="footer-logo">5W's & How </p>
+
+  </footer>
+</body>
+
+</html>
